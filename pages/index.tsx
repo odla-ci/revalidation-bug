@@ -14,7 +14,7 @@ const IndexPage: FC<Props> = ({postItems}) => (
       {postItems.map(({id, title}) => {
         return <li key={id}>
           <Link href={`/posts/${id}`} passHref>
-          <a>{title}</a>
+          <a>{id} - {title}</a>
           </Link>
         </li>
       })}
