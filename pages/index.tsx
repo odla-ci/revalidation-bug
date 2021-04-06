@@ -34,10 +34,10 @@ export const getStaticProps: GetStaticProps = async () => {
     const postItems = await res.json()
 
     return {
+      revalidate: 10,
       props: {
         postItems,
         gspId
-
       }
     }
   } catch (error) {
