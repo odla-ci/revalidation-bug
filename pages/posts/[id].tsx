@@ -64,7 +64,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     const post = await res.json()
     
     return {
-      revalidate: 30,
+      revalidate: 10,
       props: {
         post,
         gspId
